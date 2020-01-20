@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MachineShow.vue Query data GraphQl 1`] = `
+<v-container-stub
+  tag="div"
+>
+  <div
+    class="machine-header"
+  >
+    <h1
+      class="title"
+    >
+      This is a Buldoser
+    </h1>
+  </div>
+   
+  <!---->
+   
+  <v-select-stub
+    appendicon="$dropdown"
+    backgroundcolor=""
+    clearicon="$clear"
+    errorcount="1"
+    errormessages=""
+    itemcolor="primary"
+    itemdisabled="disabled"
+    items="[object Object]"
+    itemtext="name"
+    itemvalue="id"
+    label="Sensor"
+    loaderheight="2"
+    menuprops="[object Object]"
+    messages=""
+    nodatatext="$vuetify.noDataText"
+    rules=""
+    solo="true"
+    successmessages=""
+    type="text"
+    value="[object Object]"
+    valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date && b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}"
+  />
+   
+  <div
+    class="location"
+  >
+    <address>
+      Last known gps position 
+    </address>
+  </div>
+   
+  <form>
+    <div>
+      <h3>
+        Please Select Dates
+      </h3>
+       
+      <div
+        class="field"
+      >
+        <label>
+          First day
+        </label>
+         
+        <datepicker-stub
+          class="date"
+          format="dd MMM yyyy"
+          language="[object Object]"
+          maximumview="year"
+          minimumview="day"
+          placeholder="Select a start date"
+          value=""
+        />
+      </div>
+       
+      <div
+        class="field"
+      >
+        <label>
+          Last day
+        </label>
+         
+        <datepicker-stub
+          class="date"
+          format="dd MMM yyyy"
+          language="[object Object]"
+          maximumview="year"
+          minimumview="day"
+          placeholder="Select an end date"
+          value=""
+        />
+      </div>
+    </div>
+     
+    <!---->
+  </form>
+   
+  <datagraph-stub
+    cols="12"
+    data="[object Object]"
+    md="4"
+  />
+   
+  <v-snackbar-stub
+    timeout="6000"
+    value="true"
+  >
+    
+    You have selected Buldoser
+    
+    <v-btn-stub
+      activeclass=""
+      color="pink"
+      tag="button"
+      text="true"
+      type="button"
+    >
+      
+      Close
+    
+    </v-btn-stub>
+  </v-snackbar-stub>
+</v-container-stub>
+`;
+
+exports[`MachineShow.vue check if snaphot is correct 1`] = `
+<v-container-stub tag="div">
+  <div class="machine-header">
+    <h1 class="title">This is a Buldoser</h1>
+  </div>
+  <!---->
+  <v-select-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" value="[object Object]" appendicon="$dropdown" backgroundcolor="" label="Sensor" loaderheight="2" clearicon="$clear" solo="true" type="text" valuecomparator="function deepEqual(a, b) {
+  if (a === b) return true;
+
+  if (a instanceof Date &amp;&amp; b instanceof Date) {
+    // If the values are Date, they were convert to timestamp with getTime and compare it
+    if (a.getTime() !== b.getTime()) return false;
+  }
+
+  if (a !== Object(a) || b !== Object(b)) {
+    // If the values aren't objects, they were already checked for equality
+    return false;
+  }
+
+  var props = Object.keys(a);
+
+  if (props.length !== Object.keys(b).length) {
+    // Different number of props, don't bother to check
+    return false;
+  }
+
+  return props.every(function (p) {
+    return deepEqual(a[p], b[p]);
+  });
+}" nodatatext="$vuetify.noDataText" items="[object Object]" itemcolor="primary" itemdisabled="disabled" itemtext="name" itemvalue="id" menuprops="[object Object]"></v-select-stub>
+  <div class="location">
+    <address>Last known gps position </address>
+  </div>
+  <form>
+    <div>
+      <h3>Please Select Dates</h3>
+      <div class="field"><label>First day</label>
+        <datepicker-stub value="" format="dd MMM yyyy" language="[object Object]" placeholder="Select a start date" minimumview="day" maximumview="year" class="date"></datepicker-stub>
+      </div>
+      <div class="field"><label>Last day</label>
+        <datepicker-stub value="" format="dd MMM yyyy" language="[object Object]" placeholder="Select an end date" minimumview="day" maximumview="year" class="date"></datepicker-stub>
+      </div>
+    </div>
+    <!---->
+  </form>
+  <datagraph-stub data="[object Object]" cols="12" md="4"></datagraph-stub>
+  <v-snackbar-stub value="true" timeout="6000">
+    You have selected Buldoser
+    <v-btn-stub color="pink" tag="button" activeclass="" text="true" type="button">
+      Close
+    </v-btn-stub>
+  </v-snackbar-stub>
+</v-container-stub>
+`;
