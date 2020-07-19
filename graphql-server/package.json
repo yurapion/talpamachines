@@ -15,6 +15,6 @@
     "faker": "^4.1.0",
     "graphql": "^14.5.8",
     "graphql-type-datetime": "^0.2.4",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.19"
   }
 }
